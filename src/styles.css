@@ -1,0 +1,224 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* all ***********************************************************************/
+* {
+    font-family: sans-serif !important; 
+}
+body {
+    margin: 0;
+}
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.bold-text {
+    font-weight: bold;
+}
+/* all ************************************************************************/
+
+/* app ************************************************************************/
+.app-wrapper {
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #FFCC01;
+}
+
+.app-content-wrapper {
+    display: flex;
+    width: 100%;
+}
+.app-content-wrapper-mobile {
+    width: 100%;
+}
+.left-content {
+    width: 20%;
+}
+.right-content {
+    width: 80%;
+}
+.top-content {
+    width: 100%;
+}
+.bottom-content {
+    width: 100%;
+}
+/* app ***********************************************************************/
+
+/* header classes ************************************************************/
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #FFCC01;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+.header-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.header-icon {
+    width: 86.6px;
+    height: 65px;
+    margin: 0 1rem 0 1rem;
+}
+.header-text {
+    margin: 0 2.5rem 0 2.5rem;
+    font-size: x-large;
+}
+/* header classes *************************************************************/
+
+/* footer classes ***********************************************************/
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #FFCC01;
+}
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+.footer-content {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 10px;
+}
+/* footer classes ************************************************************/
+
+/* side nav classes ***********************************************************/
+.side-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    &.mobile {
+        height: 40vh;
+    }
+}
+.side-nav {
+    background-color: white;
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+.side-nav-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.side-nav-card {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+}
+/* side nav classes ***********************************************************/
+
+/* content classes ***********************************************************/
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    line-height: 60px;
+    background-color: #FFCC01;
+    &.mobile {
+        height: 40vh;
+    }
+}
+.content {
+    background-color: #2971B8;
+    height: 90%;
+    width: 100%;
+    border-radius: 5px;
+    overflow-y: auto;
+    margin-left: 10px;
+    &.mobile {
+        margin-left: 0;
+    }
+}
+.content-inner {
+    margin: 0 2.5rem 0 2.5rem;
+}
+.content-header {
+    display: flex;
+    justify-content: space-between;
+}
+/* content classes ***********************************************************/
+
+/* accordion classes *********************************************************/
+.accordion-wrapper {
+    margin-bottom: 1rem;
+}
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    color: #2971B8;
+}
+.accordion-header-text {
+    margin-left: 10px;
+}
+.accordion-header-button {
+    background-color: #1B356E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    right: 0; 
+    color: white;
+}
+.accordion-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 10;
+    background-color: white;
+}
+.accordion-bottom-button {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    line-height: 25px;
+}
+/* accordion classes *********************************************************/
+

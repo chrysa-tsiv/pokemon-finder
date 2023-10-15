@@ -1,0 +1,22 @@
+<div>
+    <div *ngIf="message">
+        <div class="bold-text">
+            {{capitalizeString(message.name)}}</div>
+        <div>
+            <div>
+                <img [src]="message.sprites?.front_default" [alt]="message.name">
+            </div>
+            <div class="bold-text">Abilities:</div>
+            <div *ngFor="let ability of message.abilities">— {{capitalizeString(ability.ability.name)}}</div>
+            <!-- <br>
+            <div class="bold-text">Forms:</div>
+            <div *ngFor="let form of message.forms">— {{capitalizeString(form.name)}}</div> -->
+            <br>
+            <div class="bold-text">Types:</div>
+            <div *ngFor="let type of message.types">— {{capitalizeString(type.type.name)}}</div>
+            <br>
+            <div class="bold-text">Stats:</div>
+            <div *ngFor="let stat of message.stats">— {{capitalizeString(stat.stat.name)}} ({{stat.base_stat}}) <br>— Effort
+                ({{stat.effort}}) <br> <br> </div>
+        </div>
+    </div>

@@ -1,0 +1,12 @@
+<div class="footer-wrapper">
+    <div class="footer">
+        <div class="footer-content">
+            <div *ngFor="let link of footerLinks">
+                <a href={{link.link}} target="_blank">
+                    <img src={{link.iconPath}} class="footer-icon"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>

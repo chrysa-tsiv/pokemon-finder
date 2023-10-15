@@ -1,0 +1,27 @@
+<div class="accordion-wrapper">
+    <div *ngIf="isExpandAccordion; then hideDetails else showDetails"></div>
+
+    <ng-template #hideDetails>
+        <ng-container *ngTemplateOutlet="row;context: {arrow: 'ᐱ'}"></ng-container>
+
+        <div>
+            <div class="accordion-image">
+                <button class="accordion-bottom-button" (click)="showProfile(pokemonIndex+1)">↩︎ Show Pokemon card</button>
+                <img [src]="pokemon.sprites?.front_default" [alt]="pokemon.name">
+            </div>
+            
+        </div>
+    </ng-template>
+    <ng-template #showDetails>
+        <ng-container *ngTemplateOutlet="row;context: {arrow: 'ᐯ'}"></ng-container>
+    </ng-template>
+</div>
+
+<ng-template #row let-arrow="arrow">
+    <div class="accordion-header">
+        <div class="accordion-header-text">
+            {{pokemonIndex+1}}. {{capitalizeString(this.pokemon.name)}}
+        </div>
+        <button class="accordion-header-button" (click)="onClick()">{{arrow}}</button>
+    </div>
+</ng-template>

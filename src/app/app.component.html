@@ -1,0 +1,25 @@
+
+<div class="app-wrapper" (window:resize)="onResize($event)">
+  <app-header></app-header>
+
+  <!-- desktop view -->
+  <div *ngIf="!isMobileView" [class]="appContentWrapperClass">
+    <div class="left-content">
+      <app-side-nav [isMobileView]="isMobileView"></app-side-nav>
+    </div>
+    <div class="right-content">
+      <app-content [isMobileView]="isMobileView"></app-content>
+    </div>
+  </div>
+  
+  <!-- mobile view -->
+  <div *ngIf="isMobileView" [class]="appContentWrapperClass">
+    <div class="top-content">
+      <app-content [isMobileView]="isMobileView"></app-content>
+    </div>
+    <div class="bottom-content">
+      <app-side-nav [isMobileView]="isMobileView"></app-side-nav>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

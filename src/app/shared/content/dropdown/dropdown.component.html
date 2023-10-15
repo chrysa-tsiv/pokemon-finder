@@ -1,0 +1,4 @@
+<select #selectedNumber (change)="onChange(selectedNumber.value)">
+    <option value="" default>How many Pokemons do you want to see?</option>
+    <option *ngFor="let option of options" [value]="option">{{option}}</option>
+</select>

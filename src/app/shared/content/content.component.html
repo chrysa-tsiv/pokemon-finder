@@ -1,0 +1,17 @@
+<div [class]="contentWrapperClass" (window:resize)="onResize($event)">
+    <div [class]="contentClass">
+        <div class="content-inner">
+            <div [class]="contentHeaderClass">
+                <div class="bold-text">
+                    Pokemons ({{ pokemons.length }})
+                </div>
+
+                <app-dropdown (limitEvent)="receiveLimit($event)"></app-dropdown>
+            </div>
+
+            <div class="list-class" *ngFor="let pokemon of pokemons; index as i">
+                <app-accordion [pokemon]="pokemon" [pokemonIndex]="i"></app-accordion>
+            </div>
+        </div>
+    </div>
+</div>
