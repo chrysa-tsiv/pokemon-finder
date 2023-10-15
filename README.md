@@ -1,27 +1,46 @@
-# Pokedex
+# Assessment: Building a Basic Page Structure with Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+## Objective
 
-## Development server
+The goal of this technical assessment is to utilize the Angular project to create a webpage that demonstrates proper HTML usage, responsive CSS styling, component organization, effective route management, and successful HTTP requests.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requirements
 
-## Code scaffolding
+### 1. Page Structure:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Create a page with the following sections:
 
-## Build
+- A section at the top of the page.
+- A section left-hand side.
+- A content section, that should show a list using an accordion component that will be used to present information from an API.
+- A section at the bottom of the page.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 2. Angular Components:
 
-## Running unit tests
+The accordion should be a versatile and reusable component.
+**You also have the choice to** create individual Angular components for the sections of the page that you consider important.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 3. HTTP Request and Data:
 
-## Running end-to-end tests
+In the Main Content section, as previously mentioned, create a list of accordions, with at least 2 items. Each accordion's title should correspond to the name of a Pokémon, while the content should display its respective image.
+To gather the required data, start by sending a request to this API endpoint: https://pokeapi.co/api/v2/pokemon?limit=:limit (Replace ":limit" with the desired number of Pokémon to retrieve). Afterward, you can utilize the URLs provided for each Pokémon to fetch their names and images.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Note:** Extract the Pokémon name from the response using the "name" property, and access the image from the "sprites" property.
 
-## Further help
+## Assessment Steps
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 1. Creating a Repository:
+
+Begin your assessment by making a repository. You can decide how to init and submit your work, but I recommend using the online coding environment [StackBlitz](https://stackblitz.com). This platform lets you develop and share the project with us by providing the project's link.
+
+### 2. Work on the Requirements:
+
+Follow the instructions provided in the requirements section.
+
+### 3. Ensure Compatibility Across Various Devices and Screen Sizes:
+
+Don't focus on how the design looks, but use the correct HTML structure and proper CSS to create a responsive layout. Also, make sure to optimize the implementation for the best performance.
+
+### 4. Accomplish Tasks Without External Libraries:
+
+Apart from Angular and RxJS, don't use any other libraries or frameworks for this assessment.
