@@ -23,7 +23,7 @@ export class SideNavComponent implements OnInit {
 
   setClass() {
     if (this.isMobileView) {
-      this.sideNavWrapperClass = 'side-nav-wrapper mobile'
+      this.sideNavWrapperClass = 'side-nav-wrapper-mobile'
     } else {
       this.sideNavWrapperClass = 'side-nav-wrapper';
     }

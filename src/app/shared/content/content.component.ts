@@ -62,8 +62,8 @@ export class ContentComponent implements OnInit {
 
   setClass() {
     if (this.isMobileView) {
-      this.contentClass = 'content mobile';
-      this.contentWrapperClass = 'content-wrapper mobile';
+      this.contentClass = 'content-mobile';
+      this.contentWrapperClass = 'content-wrapper-mobile';
       this.contentHeaderClass = '';
     } else {
       this.contentClass = 'content';
