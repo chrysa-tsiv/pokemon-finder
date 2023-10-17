@@ -1,6 +1,6 @@
 # Assessment: Building a Basic Page Structure with Angular
 
-[Stackblitz App Link]([url](https://github-w8tww4.stackblitz.io)) (https://github-w8tww4.stackblitz.io)
+[Stackblitz App Link]([url](https://github-w8tww4.stackblitz.io) (https://github-w8tww4.stackblitz.io)
 
 ## Objective
 
