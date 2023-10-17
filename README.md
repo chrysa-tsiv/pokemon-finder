@@ -1,5 +1,7 @@
 # Assessment: Building a Basic Page Structure with Angular
 
+[Stackblitz App Link]([url](https://github-w8tww4.stackblitz.io)) (https://github-w8tww4.stackblitz.io)
+
 ## Objective
 
 The goal of this technical assessment is to utilize the Angular project to create a webpage that demonstrates proper HTML usage, responsive CSS styling, component organization, effective route management, and successful HTTP requests.
